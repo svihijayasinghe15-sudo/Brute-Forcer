@@ -21,11 +21,40 @@ A professional-grade, multi-threaded brute force engine featuring a live, Rich-p
 * **UI/Logic Separation:** Complete decoupling of network input/output functions from visual presentation components for easy long-term maintenance.
 
 ---
+### Dashbaord
+<img width="935" height="608" alt="Screenshot 2026-06-24 at 20 32 12" src="https://github.com/user-attachments/assets/31e11eb3-28ae-4150-ad9d-cd5f3e6aa5b9" />
+
+<img width="1238" height="634" alt="Screenshot 2026-06-24 at 20 30 59" src="https://github.com/user-attachments/assets/a8aeb619-712a-4c99-8fe8-9b4cd8d0faac" />
 
 ## 🛠️ Requirements & Dependencies
 
 * Python 3.8+
 * Kali Linux (recommended) or any Debian-based Linux distribution
+
+### Executable Commands
+# SSH Assessment — 20 concurrent threads
+python3 thread.py 192.168.1.100 -p 22 --protocol ssh \
+    -U /usr/share/seclists/Usernames/top-usernames-shortlist.txt \
+    -P /usr/share/wordlists/rockyou.txt \
+    -t 20
+
+# FTP Assessment — Rate-limited enforcement
+python3 thread.py 192.168.1.100 -p 21 --protocol ftp \
+    -U users.txt \
+    -P passwords.txt \
+    -t 10 --delay 0.5
+
+# HTTP Basic Authentication — Low-density validation
+python3 thread.py 192.168.1.100 -p 8080 --protocol http_basic \
+    -U admin_users.txt \
+    -P common_passwords.txt \
+    -t 5
+
+# HTTP Form-Based Authentication
+python3 thread.py 192.168.1.100 -p 80 --protocol http_form \
+    -U users.txt \
+    -P rockyou.txt \
+    -t 8
 
 ### Installation
 
@@ -42,9 +71,4 @@ pip3 install rich requests paramiko
 # Option B: Install via native package manager (Kali/Debian systems)
 sudo apt update
 sudo apt install python3-rich python3-requests python3-paramiko -y
-
-<img width="935" height="608" alt="Screenshot 2026-06-24 at 20 32 12" src="https://github.com/user-attachments/assets/43782329-5901-4949-bed7-fe3d2b97dc6d" />
-
-<img width="1238" height="634" alt="Screenshot 2026-06-24 at 20 30 59" src="https://github.com/user-attachments/assets/d1c797f5-1e64-4ecb-913c-5fed13028996" />
-
 
