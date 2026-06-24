@@ -72,15 +72,15 @@ pip3 install rich requests paramiko
 sudo apt update
 sudo apt install python3-rich python3-requests python3-paramiko -y
 
-**⚙️ Operational Boundaries & Limitations**
+### ⚙️ Operational Boundaries & Limitations
 Memory Usage: The engine instantiates credential permutations within an active structural matrix during launch setup. Avoid cross-joining massive username arrays against high-density password files simultaneously on memory-constrained systems.
 Network Layers: Standard deployment configurations lack internal SOCKS/Proxy routing mechanisms.
 Persistence: Application flows do not include mid-session state recovery or execution breakpoint serialization features.
 HTTP Forms: Form-based validation requires programmatic modification to match target-specific input fields, parameter shapes, and validation indicators.
 
-**⚠️ Legal & Ethical Usage Disclaimer**
+### ⚠️ Legal & Ethical Usage Disclaimer
 This tool is intended strictly for authorized security testing and educational research environments only. Running automated authentication sweeps against targets without explicit, prior written permission from the asset owner is unauthorized, highly dangerous, and strictly illegal. The authors assume absolutely no liability and are not responsible for any downstream misuse, security incidents, or damage caused by this utility suite.
 
-**📄 License**
+### 📄 License
 This project is licensed under the terms of the MIT License.
 
