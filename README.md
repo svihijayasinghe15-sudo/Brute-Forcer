@@ -43,7 +43,8 @@ pip3 install rich requests paramiko
 sudo apt update
 sudo apt install python3-rich python3-requests python3-paramiko -y
 
+<img width="935" height="608" alt="Screenshot 2026-06-24 at 20 32 12" src="https://github.com/user-attachments/assets/43782329-5901-4949-bed7-fe3d2b97dc6d" />
+
+<img width="1238" height="634" alt="Screenshot 2026-06-24 at 20 30 59" src="https://github.com/user-attachments/assets/d1c797f5-1e64-4ecb-913c-5fed13028996" />
 
 
-<img width="1238" height="634" alt="Screenshot 2026-06-24 at 20 30 59" src="https://github.com/user-attachments/assets/22562e72-77fa-4737-8886-15895bb7f85d" />
-<img width="935" height="608" alt="Screenshot 2026-06-24 at 20 32 12" src="https://github.com/user-attachments/assets/8fdbae0a-6476-42d4-bad1-880be994a6f2" />
